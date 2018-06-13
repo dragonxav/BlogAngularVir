@@ -1,4 +1,15 @@
-<H2>Posts</H2>
-<app-post-list-component [postsList] = "post"
-                         *ngFor="let post of posts"
-                         ></app-post-list-component>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active"><a routerLink="posts">Posts</a> </li>
+      <li routerLinkActive="active"><a routerLink="new">Nouveau Post</a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <router-outlet> </router-outlet>
+  </div>
+</div>
+
+

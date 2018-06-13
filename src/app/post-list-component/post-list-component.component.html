@@ -1,7 +1,6 @@
+<H2>Posts</H2>
 <div class="container">
-<app-post-list-item-component [title] = "postsList.title"
-                              [content] = "postsList.content"
-                              [loveIts] = "postsList.loveIts"
-                              [created_at] = "postsList.created_at"
+<app-post-list-item-component [post] = "postlocal"  *ngFor="let postlocal of posts"
 ></app-post-list-item-component>
 </div>
+
